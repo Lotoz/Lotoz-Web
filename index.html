@@ -1,40 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zamira Grippi Portafolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zamira Grippi — Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <!--Por ahora se hara de estilo halloween-->
-    <header>
-        <!--Anadir un encabezado con un nav para cada apartado, los apartados son los siguientes:
-        Sobre mi. (breve descripcion)
-        Proyectos(Proyectos como Pomodoro Scp etc)
-        Repositorios()
-        Mis otras redes sociales (Likedin y youtube)-->
-        <nav>
-            <ul>
-                <li><a href="">Sobre mi.</a></li>
-                <li><a href="">Proyectos.</a></li>
-                <li><a href="">Repositorios.</a></li>
-                <li><a href="">Mis otras redes:</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <!--
-        Ultimas cosas realizadas.
-        Proyectos mas recientes y canal.
-        Breve descripcion etc
-        -->
+<body class="bg-dark text-light">
 
+  <!-- CAbecera y navegador de bsuqueda-->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <span class="brand-dot"></span>
+          Zamira Grippi "Lotoz"
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#repositorios">Repositorios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#redes">Mis otras redes</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- La parte central-->
+  <main>
+    <section class="container py-5" id="sobre-mi">
+      <div class="row align-items-center gap-4">
+        <div class="col-md-4 text-center">
+          <div class="profile-card p-3">
+            <img src="https://avatars.githubusercontent.com/u/144383551?s=400&u=1ad9ec2436618406407d10b96bc5f42d5d1989e9&v=4"
+                 alt="Foto de Lotoz" class="rounded-circle profile-img shadow-lg">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <h1 class="display-6 mb-1">Zamira Grippi</h1>
+          <h2 class="h5 text-muted mb-3">Alias: Lotoz</h2>
+          <p class="lead">Desarrolladora Web (DAW), entusiasta de Linux y programadora de código abierto. Siempre aprendiendo y creando proyectos útiles.</p>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li class="badge-chip">Desarrollador Web (DAW)</li>
+            <li class="badge-chip">Entusiasta Linux</li>
+            <li class="badge-chip">Programador código abierto</li>
+            <li class="badge-chip">Siempre aprendiendo</li>
+          </ul>
+          <div class="mt-3">
+            <a class="btn btn-outline-light btn-sm me-2" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-primary btn-sm" href="#repositorios">Ver repositorios</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Proyectos -->
+    <section class="py-5" id="proyectos">
+      <div class="container">
+        <h3 class="mb-4">Proyectos recientes</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title ">Pomodoro</h5>
+                <p class="card-text">Temporizador Pomodoro con interfaz limpia y notificaciones.</p>
+                <a href="#" class="stretched-link">Ver proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title">SCP - Mini</h5>
+                <p class="card-text">Proyecto de ejemplo con API y frontend sencillo.</p>
+                <a href="#" class="stretched-link">Ver proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Canal / Contenido</h5>
+                <p class="card-text">Notas, tutoriales y contenido educativo en YouTube.</p>
+                <a href="https://www.youtube.com/channel/UC7IUVIHtAet6dr9XPzMXSyA" class="stretched-link">Ver canal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Repositorios -->
+    <section class="py-5" id="repositorios">
+      <div class="container">
+        <h3 class="mb-4">Repositorios</h3>
+        <p class="text-muted mb-3">Proyectos públicos en GitHub. Aquí algunos destacados:</p>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-4">
+            <div class="repo-card p-3">
+              <h6 class="mb-1">Lotoz-Web</h6>
+              <p class="small text-muted mb-2">Portafolio y ejemplos frontend.</p>
+              <a href="#" class="link-light small">Ver en GitHub</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="repo-card p-3">
+              <h6 class="mb-1">Pomodoro-App</h6>
+              <p class="small text-muted mb-2">Temporizador y productividad.</p>
+              <a href="#" class="link-light small">Ver en GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Redes sociales -->
+    <section class="py-5" id="redes">
+      <div class="container">
+        <h3 class="mb-3">Mis otras redes</h3>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="social-card p-3 d-flex align-items-center gap-3">
+              <div class="icon-circle">in</div>
+              <div>
+                <strong>LinkedIn</strong>
+                <div class="small text-muted">Perfil profesional y contacto</div>
+              </div>
+              <div class="ms-auto">
+                <a class="btn btn-sm btn-outline-light" href="#">Ir</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="social-card p-3 d-flex align-items-center gap-3">
+              <div class="icon-circle">yt</div>
+              <div>
+                <strong>YouTube</strong>
+                <div class="small text-muted">Tutoriales y proyectos</div>
+              </div>
+              <div class="ms-auto">
+                <a class="btn btn-sm btn-outline-light" href="#">Ir</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="social-card p-3 d-flex align-items-center gap-3">
+              <div class="icon-circle">@</div>
+              <div>
+                <strong>Instagram</strong>
+                <div class="small text-muted">Momentos y actualizaciones</div>
+              </div>
+              <div class="ms-auto">
+                <a class="btn btn-sm btn-outline-light" href="#">Ir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Pie de pagina-->
+  <footer class="py-4 mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small class="text-muted">© 2025 Zamira Grippi "Lotoz"</small>
+      <div>
+        <a class="link-light me-3" href="#proyectos">Proyectos</a>
+        <a class="link-light me-3" href="#repositorios">Repositorios</a>
+        <a class="link-light" href="#redes">Redes</a>
+      </div>
     </div>
-    <footer>
-        <!--
-        Apartado de la pagina
-        Links de nuevo
-        Firma y detalles-->
-    </footer>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
