@@ -1,14 +1,19 @@
 
 :root{
-  --purple-700: #5b2a86;
-  --purple-600: #7a3fae;
-  --purple-500: #9b5de5;
-  --bg-dark: #0b0810;
+  --purple-700: #ffbb00;
+  --purple-600: #ffde24;
+  --purple-500: #ffe77c;
+  --bg-dark: #181220;
 }
+/*
+ --purple-700: #5f9e28;
+  --purple-600: #63b445;
+  --purple-500: #c5ff98;
+*/
 
 body{
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: linear-gradient(180deg, rgba(11,8,16,1) 0%, rgba(11,8,16,1) 30%, rgba(12,8,20,0.6) 100%);
+  background: linear-gradient(180deg, rgb(50, 35, 71) 0%, rgb(54, 40, 77) 30%, rgba(44, 28, 74, 0.6) 100%);
   color: #eae6f7;
 }
 
@@ -31,19 +36,21 @@ body{
 
 .badge-chip{
   display: inline-block;
-  background: linear-gradient(90deg, rgba(91,42,134,0.14), rgba(155,93,229,0.06));
+  background: linear-gradient(90deg, rgba(161, 56, 253, 0.14), rgba(157, 82, 248, 0.06));
   padding: 6px 10px;
   border-radius: 999px;
   color: #f3ecff;
   width: fit-content;
 }
-
+.subTitle{
+  color: #7a367f;
+}
 .project-card{
   background: linear-gradient(180deg, rgba(24,12,36,0.6), rgba(12,8,20,0.6));
   border: 1px solid rgba(155,93,229,0.08);
   box-shadow: 0 6px 20px rgba(91,42,134,0.08);
   transition: transform .18s ease, box-shadow .18s ease;
-  color: rgb(185, 185, 185)
+  color: rgb(218, 218, 218)
 }
 .project-card:hover{ transform: translateY(-6px); box-shadow: 0 14px 40px rgba(91,42,134,0.12); }
 
@@ -53,11 +60,12 @@ body{
   border: 1px solid rgba(155,93,229,0.06);
 }
 section{
-  color: #442464;
+  color: #d887de;
   
 }
+
 .social-card{
-  background: linear-gradient(90deg, rgba(91,42,134,0.12), rgba(155,93,229,0.04));
+  background: linear-gradient(90deg, rgba(138, 68, 199, 0.12), rgba(155,93,229,0.04));
   border-radius: 10px;
   border: 1px solid rgba(155,93,229,0.05);
 }
@@ -65,7 +73,11 @@ section{
 .icon-circle{
   width:44px; height:44px; border-radius:10px;
   background: linear-gradient(180deg,var(--purple-600),var(--purple-500));
-  display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#fff;
 }
 
 .profile-card{
