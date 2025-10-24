@@ -1,0 +1,6 @@
+Agregar comentarios de que es cada cosa para no marear
+Agregar accesibilidad a los iconos de tema oscuro/claro
+Cambiar los <i> por <span> en los iconos para mejorar accesibilidad
+Agregar modo daltonico (falta implementar)
+Mejorar la detección del tema preferido al iniciar la web
+Agregar todos los links sociales faltantes

@@ -1,0 +1,242 @@
+:root {
+  --bg-1: #0b0614;
+  --bg-2: #14071a;
+  --surface: #1b0f26;
+  --surface-2: #24122f;
+  --purple-500: #8a2be2;
+  --purple-400: #9f64ff;
+  --purple-300: #b991ff;
+  --gold-400: #ffd36b;
+  --gold-500: #f0b400;
+  --text: #f7f3ff;
+  --text-muted: #d4c6f0;
+  --text-dim: #b3a4d9;
+  --glass: rgba(150, 90, 255, 0.12);
+  --navbar-bg: rgba(22, 0, 44, 0.85);
+}
+
+/* Base */
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(138, 72, 255, 0.08), transparent 10%),
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 80%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
+.subTitle, 
+.text-muted,
+.small,
+.card-text,
+.navbar .nav-link {
+  color: var(--text-muted) !important;
+}
+.project-card .card-title,
+.repo-card h6,
+.social-card strong {
+  color: var(--text);
+}
+.nav-link,
+.navbar-brand,
+footer a {
+  color: var(--text-muted);
+}
+.nav-link:hover,
+.navbar-brand:hover,
+footer a:hover {
+  color: var(--text);
+}
+.navStyle {
+  background: linear-gradient(180deg, var(--navbar-bg));
+}
+
+.navbar-brand {
+  color: var(--bg-1);
+}
+
+/* Profile image */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(114, 32, 255, 0.18);
+  transition: transform .25s ease, box-shadow .25s ease;
+  background: linear-gradient(180deg, rgba(110, 27, 255, 0.08), transparent);
+}
+
+.profile-img:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 18px 40px rgba(143, 86, 255, 0.12);
+}
+
+.borderTop {
+  border-top: 2px solid rgba(143, 86, 255, 0.18);
+  padding-top: 2.5rem;
+}
+
+/* Badges */
+.badge-chip {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(152, 92, 255, 0.293), rgba(240, 181, 80, 0.225));
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--glass);
+  font-weight: 600;
+  width: fit-content;
+  font-weight: 600;
+}
+
+/* Section decorative border (short centered) */
+.section-border {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.section-border::before {
+  content: "";
+  display: block;
+  width: min(720px, 80%);
+  height: 6px;
+  margin: 0 auto 1.25rem;
+  background: linear-gradient(90deg, var(--purple-400), var(--gold-400));
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(138, 72, 255, 0.12);
+}
+
+/* Project cards */
+.project-card {
+  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  border: 1px solid rgba(138, 72, 255, 0.08);
+  border-left: 6px solid rgba(138, 72, 255, 0.18);
+  border-radius: 12px;
+  color: var(--text);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.project-card .card-title {
+  color: var(--purple-300);
+  font-weight: 700;
+}
+
+.project-card .card-text {
+  color: var(--muted);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Repo card */
+.repo-card {
+  background: linear-gradient(180deg, #1b1227, #1d1530);
+  border-radius: 10px;
+  border: 1px solid rgba(240, 180, 80, 0.06);
+  color: var(--text);
+  padding: 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.repo-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, var(--gold-400), var(--gold-500));
+}
+
+/* Social */
+.social-card {
+  background: linear-gradient(90deg, rgba(138, 72, 255, 0.08), rgba(240, 180, 80, 0.02));
+  border-radius: 12px;
+  padding: .8rem;
+  color: var(--text);
+}
+
+/* Icon circle */
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, var(--purple-500), var(--purple-400));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 215, 120, 0.04);
+}
+
+.icon-style {
+  font-size: 2rem;
+  color: rgb(255, 204, 0);
+}
+
+/* Profile card */
+.profile-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid rgba(138, 72, 255, 0.06);
+}
+
+/* Buttons */
+.btn-dark-accent {
+  background: linear-gradient(90deg, var(--purple-400), var(--purple-500));
+  color: #fff;
+  border: none;
+  padding: .35rem .6rem;
+  border-radius: .35rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+.btn-dark-outline {
+  color: var(--text);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Links */
+.link-gold {
+  color: var(--gold-400);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-gold:hover {
+  text-decoration: underline;
+}
+
+.card,
+.repo-card,
+.project-card,
+.social-card {
+  color: var(--text);
+}
+
+/* Footer */
+footer {
+  color: var(--muted);
+}
+
+/* Responsiveness */
+@media (max-width:767px) {
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .display-6 {
+    font-size: 1.6rem;
+  }
+}
