@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zamira Grippi - Lotoz</title>
+  </head>
+  <body>
+    <header>
+      <!--Navbar para moverse entre la pagina o si a futuro, paginas secundarias de proyectos especificos
+      Y cambio de idioma y de estilo-->
+    </header>
+    <main>
+      <section>
+        <!-- Sobre mi, el perfil de github con su foto-->
+      </section>
+      <section>
+        <!--Sobre las tecnologias que manejo y mas me gustan.-->
+      </section>
+      <section>
+        <!--Proyectos de codigo que tengo, podrian ser cards que redireccien al repo del proyecto o cards solo  con nombres de proyectos a lo que trabaje-->
+      </section>
+      <section>
+        <!--Estudios y certificados, no los incluyo explicitamente pero se nombran y estarian en el likedin-->
+      </section>
+      <section>
+        <!--Redes Sociales y contacto publico-->
+      </section>
+      <footer>
+        <!--Footer comun con links a partes de la web-->
+      </footer>
+    </main>
+  </body>
+</html>
