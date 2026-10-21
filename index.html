@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zamira Grippi - Lotoz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="./assets/css/style.css"
@@ -23,7 +28,7 @@
           <li><a href="#educacion">Educación</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <button id="toggleTheme" class="btn-icon">
+        <button id="toggleTheme" class="btn-icon" type="button" aria-label="Cambiar tema">
           <i class="bi bi-moon-stars"></i>
         </button>
       </nav>
@@ -31,90 +36,124 @@
 
     <main class="container">
       <section id="sobre-mi" class="hero-section">
-        <div class="profile-header">
-          <img
-            src="https://avatars.githubusercontent.com/u/144383551?v=4"
-            alt="Zamira Grippi"
-            class="avatar" />
-          <h1>Zamira Grippi</h1>
-          <p class="tagline">Desarrolladora Web & Entusiasta Linux</p>
+        <div class="dossier-shell">
+          <div class="dossier-topline">
+            <span><i class="bi bi-grid-1x2-fill"></i> PERFIL DIGITAL / LOTOZ</span>
+            <span class="availability"><span></span> Desarrollo web · Linux</span>
+          </div>
+          <div class="dossier-layout">
+            <div class="portrait-frame">
+              <img
+                src="https://avatars.githubusercontent.com/u/144383551?v=4"
+                alt="Retrato de Zamira Grippi"
+                class="avatar" />
+              <span class="portrait-index">LOTOZ <span>·</span> 01</span>
+            </div>
+            <div class="dossier-copy">
+              <p class="eyebrow">DOSSIER</p>
+              <h1>Zamira <span>Grippi</span></h1>
+              <p class="tagline">Desarrolladora web <span>·</span> Entusiasta Linux</p>
+              <p class="hero-summary">
+                Desarrollo experiencias web con curiosidad por la seguridad,
+                Linux y las herramientas que hacen la tecnología más útil.
+              </p>
+              <div class="hero-actions">
+                <a href="#proyectos" class="button-primary">
+                  Explorar proyectos <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="https://github.com/Lotoz" class="button-quiet">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+              <div class="dossier-facts">
+                <div><span>ENFOQUE</span><strong>Ciberseguridad (Blue Team)</strong></div>
+                <div><span>CONOCIMIENTOS</span><strong>Bastionado de sistemas · Análisis forense · Hacking Ético · Auditorías de seguridad</strong></div>
+                <div><span>ENTORNO DE TRABAJO</span><strong>Linux</strong></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="tecnologias">
+        <p class="section-kicker">KIT DE HERRAMIENTAS</p>
         <h2>Tecnologías</h2>
         <div class="tech-stack">
-          <span class="badge">PHP</span>
-          <span class="badge">JavaScript</span>
           <span class="badge">Linux / Bash</span>
-          <span class="badge">Bootstrap</span>
+          <span class="badge">Caine</span>
+          <span class="badge">Metasploit</span>
+          <span class="badge">Python</span>
+          <span class="badge">Java</span>
+          <span class="badge">Nmap</span>
+          <span class="badge">Wireshark</span>
+          <span class="badge">Burp Suite</span>
+          <span class="badge">OWASP ZAP</span>
+          <span class="badge">Y muchas cosas más ;)</span>
         </div>
       </section>
 
       <section id="proyectos">
-        <h2>Proyectos</h2>
+        <p class="section-kicker">ENCUENTROS</p>
+        <h2>Proyectos seleccionados</h2>
         <div class="bento-grid">
           <div class="bento-item large">
-            <h3>Poki-Pokedex</h3>
-            <p>Asistente personal para Pokémon.</p>
-            <a href="https://github.com/Lotoz/Poki-Pokedex" class="btn-link"
+            <h3>PenguiAntivirus</h3>
+            <p>Una herramienta de auditoria, para sistemas Linux.</p>
+            <a href="https://github.com/Lotoz/PenguiAntivirus" class="btn-link"
               >Ver Repo</a
             >
           </div>
           <div class="bento-item">
-            <h3>SCP - Mini</h3>
-            <p>API y Frontend.</p>
-          </div>
-          <div class="bento-item">
-            <h3>Refactorización</h3>
-            <p>Seguridad en formularios POST.</p>
+            <h3>Diplomacy for Dukes 👑</h3>
+            <p>APIREST del juego Diplomacy.</p>
+             <a href="https://github.com/Lotoz/Diplomacy-API-RestFull-Springboot" class="btn-link"
+              >Ver Repo</a
+            >
           </div>
           <div class="bento-item wide">
-            <h3>Canal de YouTube</h3>
-            <p>Tutoriales y contenido educativo.</p>
+            <h3>⚔️ Pomodoro War</h3>
+            <p>La productividad se encuentra con la fantasía. Un gestor de tareas y temporizador Pomodoro gamificado donde tu concentración alimenta a un ejército de héroes en su lucha contra las fuerzas de la procrastinación.</p>
+             <a href="https://github.com/Lotoz/The-Adventure-of-the-Pomodoro" class="btn-link"
+              >Ver Repo</a
+            >
           </div>
         </div>
       </section>
 
       <section id="educacion">
-        <h2>Educación</h2>
+        <p class="section-kicker">TRAYECTORIA</p>
+        <h2>Aprendizaje continuo</h2>
         <div class="education-timeline">
           <div class="education-item">
-            <h3>Desarrollo Web</h3>
-            <p class="education-subtitle">Autodidacta | 2023 - Presente</p>
-            <p>Especialización en frontend y backend con focus en seguridad.</p>
+            <h3>Ciberseguridad</h3>
+            <p class="education-subtitle">Alan Turing Actualidad</p>
+            <p>Especialización en ciberseguridad.</p>
           </div>
           <div class="education-item">
-            <h3>Programación en Linux</h3>
-            <p class="education-subtitle">Certificado | Bash & Scripting</p>
+            <h3>Programación en C</h3>
+            <p class="education-subtitle">Estudiando por mi cuenta</p>
             <p>
-              Dominio avanzado de shell scripting y administración de sistemas.
+              Aprendiendo los fundamentos de la programación en lenguaje C.
             </p>
           </div>
         </div>
       </section>
 
       <section id="contacto">
-        <h2>Conecta Conmigo</h2>
+        <p class="section-kicker">FIND</p>
+        <h2>Conecta conmigo</h2>
         <div class="social-links">
           <a href="https://github.com/Lotoz" class="social-btn" title="GitHub">
             <i class="bi bi-github"></i>
             <span>GitHub</span>
           </a>
-          <a href="https://linkedin.com" class="social-btn" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/zamira-grippi" class="social-btn" title="LinkedIn">
             <i class="bi bi-linkedin"></i>
             <span>LinkedIn</span>
           </a>
-          <a href="https://youtube.com" class="social-btn" title="YouTube">
+          <a href="https://www.youtube.com/@doctorlotoz" class="social-btn" title="YouTube">
             <i class="bi bi-youtube"></i>
             <span>YouTube</span>
-          </a>
-          <a
-            href="mailto:tu-email@example.com"
-            class="social-btn"
-            title="Email">
-            <i class="bi bi-envelope"></i>
-            <span>Contacto</span>
           </a>
         </div>
       </section>
@@ -126,8 +165,7 @@
           <div class="footer-section">
             <h3>Sobre mí</h3>
             <p>
-              Desarrolladora Web apasionada por la seguridad, Linux y la
-              creación de experiencias digitales modernas y elegantes.
+              Soy Zamira Grippi, conocida como "Lotoz". Me apasiona la ciberseguridad y el desarrollo web. Siempre estoy buscando aprender y mejorar mis habilidades en el mundo de la tecnología.
             </p>
           </div>
           <div class="footer-section">
@@ -140,27 +178,23 @@
           <div class="footer-section">
             <h3>Conecta Conmigo</h3>
             <a href="https://github.com/Lotoz">GitHub</a><br />
-            <a href="https://linkedin.com">LinkedIn</a><br />
-            <a href="https://youtube.com">YouTube</a><br />
-            <a href="mailto:tu-email@example.com">Correo</a>
+            <a href="https://www.linkedin.com/in/zamira-grippi">LinkedIn</a><br />
+            <a href="https://www.youtube.com/@doctorlotoz">YouTube</a><br />
           </div>
         </div>
         <div class="footer-bottom">
           <p>
-            © 2025 Zamira Grippi "Lotoz" — Construido con ❤️ y CSS Dinámico.
+            © 2026 Zamira Grippi "Lotoz" — Construido con ❤️ y CSS Dinámico.
           </p>
           <div class="footer-socials">
             <a href="https://github.com/Lotoz" title="GitHub">
               <i class="bi bi-github"></i>
             </a>
-            <a href="https://linkedin.com" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/zamira-grippi" title="LinkedIn">
               <i class="bi bi-linkedin"></i>
             </a>
-            <a href="https://youtube.com" title="YouTube">
+            <a href="https://www.youtube.com/@doctorlotoz" title="YouTube">
               <i class="bi bi-youtube"></i>
-            </a>
-            <a href="mailto:tu-email@example.com" title="Email">
-              <i class="bi bi-envelope"></i>
             </a>
           </div>
         </div>
